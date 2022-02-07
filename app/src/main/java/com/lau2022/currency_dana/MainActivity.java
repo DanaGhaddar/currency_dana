@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void convertToUsd(View view){
         int amount = Integer.parseInt(userInput.getText().toString()) / 22000 ;
-        result.setText(amount);
+        result.setText(amount + "$");
 
     }
 
     public void convertToLbp(View v){
         int amount = Integer.parseInt(userInput.getText().toString()) * 22000 ;
-        result.setText(amount);
+        result.setText(amount+"LBP");
     }
 }
